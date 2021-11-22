@@ -83,7 +83,7 @@ It's possible to utilize this repository as remote module, providing the necessa
 
 ```
 module "oci-arch-logging-splunk" {
-  source             = "github.com/oracle-devrel/terraform-oci-arch-iot-streaming"
+  source             = "github.com/oracle-devrel/terraform-oci-arch-logging-splunk"
   tenancy_ocid       = "<tenancy_ocid>"
   user_ocid          = "<user_ocid>"
   fingerprint        = "<user_ocid>"
