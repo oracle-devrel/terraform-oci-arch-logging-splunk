@@ -39,7 +39,7 @@ resource "oci_logging_log" "vcn_flow_logs" {
     source {
       category    = "all"
       service     = "flowlogs"
-      resource    = oci_core_subnet.vcn01_compute_subnet.id
+      resource    = !var.use_existing_vcn ? oci_core_subnet.vcn01_compute_subnet[0].id : var.compute_subnet_id
       source_type = "OCISERVICE"
     }
     compartment_id = var.compartment_ocid

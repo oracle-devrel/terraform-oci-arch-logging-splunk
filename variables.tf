@@ -20,6 +20,22 @@ variable "availablity_domain_number" {
   default = 0
 }
 
+variable "use_existing_vcn" {
+  default = false
+}
+
+variable "vcn_id" {
+  default = ""
+}
+
+variable "lb_subnet_id" {
+  default = ""
+}
+
+variable "compute_subnet_id" {
+  default = ""
+}
+
 variable "ssh_public_key" {
   default = ""
 }
@@ -28,50 +44,16 @@ variable "numberOfNodes" {
   default = 2
 }
 
-variable "igw_display_name" {
-  default = "internet-gateway"
-}
-
 variable "vcn01_cidr_block" {
   default = "10.0.0.0/16"
 }
-variable "vcn01_dns_label" {
-  default = "vcn01"
-}
-variable "vcn01_display_name" {
-  default = "vcn01"
-}
 
-variable "vcn01_subnet_pub01_cidr_block" {
+variable "vcn01_lb_subnet_cidr_block" {
   default = "10.0.1.0/24"
 }
 
-variable "vcn01_subnet_pub01_display_name" {
-  default = "vcn01_subnet_pub01"
-}
-
-variable "vcn01_subnet_pub02_cidr_block" {
+variable "vcn01_compute_subnet_cidr_block" {
   default = "10.0.2.0/24"
-}
-
-variable "vcn01_subnet_pub02_display_name" {
-  default = "vcn01_subnet_pub02"
-}
-
-variable "vcn01_subnet_app01_cidr_block" {
-  default = "10.0.10.0/24"
-}
-
-variable "vcn01_subnet_app01_display_name" {
-  default = "vcn01_subnet_app01"
-}
-
-variable "vcn01_subnet_db01_cidr_block" {
-  default = "10.0.20.0/24"
-}
-
-variable "vcn01_subnet_db01_display_name" {
-  default = "vcn01_subnet_db01"
 }
 
 variable "lb_shape" {
@@ -84,6 +66,14 @@ variable "flex_lb_min_shape" {
 
 variable "flex_lb_max_shape" {
   default = "100"
+}
+
+variable "lb_listener_port" {
+  default = 80
+}
+
+variable "lb_listener_backend_port" {
+  default = 8080
 }
 
 variable "InstanceShape" {
