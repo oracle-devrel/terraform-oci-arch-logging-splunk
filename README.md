@@ -4,7 +4,7 @@ A security information and event management (SIEM) system is a critical operatio
 
 Splunk Enterprise administrators can use the Logging and Streaming services with the Logging Addon for Splunk, to stream logs from resources in the cloud to an existing or new Splunk environment. Administrators can also integrate with other Splunk plugins and data sources, such as threat intelligence feeds, to augment the generation of alerts based on log data.
 
-## Reference Archirecture
+## Reference Architecture
 
 - [Implement a SIEM System in Splunk Using Logs Streamed from Oracle Cloud](https://docs.oracle.com/en/solutions/logs-stream-splunk/index.html)
 
