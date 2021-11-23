@@ -159,4 +159,16 @@ Now you can query your index and see data that looks similar to the below screen
 
 ![](./images/siem-logging-oci.png)
 
+## Contributing
+This project is open source.  Please submit your contributions by forking this repository and submitting a pull request!  Oracle appreciates any contributions that are made by the open source community.
 
+### Attribution & Credits
+Initially, this project was created and distributed in [GitHub Oracle QuickStart space](https://github.com/oracle-quickstart/oci-arch-logging-splunk). For that reason, we would like to thank all the involved contributors enlisted below:
+- Kartik Hegde (https://github.com/KartikShrikantHegde)
+
+## License
+Copyright (c) 2021 Oracle and/or its affiliates.
+
+Licensed under the Universal Permissive License (UPL), Version 1.0.
+
+See [LICENSE](LICENSE) for more details.
