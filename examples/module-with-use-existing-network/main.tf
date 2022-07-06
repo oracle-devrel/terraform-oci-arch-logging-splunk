@@ -26,8 +26,7 @@ provider "oci" {
 }
 
 module "arch-logging-splunk" {
-  #source                   = "github.com/oracle-devrel/terraform-oci-arch-logging-splunk"
-  source                   = "../../"
+  source                   = "github.com/oracle-devrel/terraform-oci-arch-logging-splunk"
   tenancy_ocid             = var.tenancy_ocid
   user_ocid                = var.user_ocid
   fingerprint              = var.fingerprint
