@@ -44,6 +44,10 @@ variable "numberOfNodes" {
   default = 2
 }
 
+variable "igw_display_name" {
+  default = "internet-gateway"
+}
+
 variable "vcn01_cidr_block" {
   default = "10.0.0.0/16"
 }

@@ -46,8 +46,6 @@ variableGroups:
   variables:
   - igw_display_name
   - vcn01_cidr_block
-  - vcn01_dns_label
-  - vcn01_display_name
   - vcn01_lb_subnet_cidr_block
   - vcn01_compute_subnet_cidr_block
 
