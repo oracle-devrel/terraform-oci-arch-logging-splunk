@@ -3,7 +3,7 @@
 
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.0.1"
+  default     = "1.0.2"
 }
 
 variable "tenancy_ocid" {}
@@ -42,6 +42,10 @@ variable "ssh_public_key" {
 
 variable "numberOfNodes" {
   default = 2
+}
+
+variable "igw_display_name" {
+  default = "internet-gateway"
 }
 
 variable "vcn01_cidr_block" {

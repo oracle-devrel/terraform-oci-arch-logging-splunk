@@ -46,8 +46,6 @@ variableGroups:
   variables:
   - igw_display_name
   - vcn01_cidr_block
-  - vcn01_dns_label
-  - vcn01_display_name
   - vcn01_lb_subnet_cidr_block
   - vcn01_compute_subnet_cidr_block
 
@@ -71,25 +69,30 @@ variables:
     description: "Shows advanced options."
     visible: true
     default: false
-  
+
+  igw_display_name:
+    type: string
+    title: "IGW Display Name"
+    description: "Internet Gateway display name"
+
   compartment_ocid:
     type: oci:identity:compartment:id
     required: true
-    visibile: true
+    visible: true
     title: Compartment
     description: "Compartment where you want to create the solution resources"
 
   region:
     type: oci:identity:region:name
     required: true
-    visibile: true
+    visible: true
     title: Region
     description: "Region where you want to deploy the resources defined by this stack."
 
   availablity_domain_name:
     type: oci:identity:availabilitydomain:name
     required: true
-    visibile: true
+    visible: true
     title: "Availability Domain to be chosen"
     description: "Availability Domain to be chosen"
     dependsOn:
