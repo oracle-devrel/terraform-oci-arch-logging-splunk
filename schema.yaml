@@ -283,10 +283,10 @@ variables:
     required: false
     title: "Instance OS version"
     description: "An Operating System version that determines the operating system version for the instance."
-    default: "8"
+    default: "9"
     enum:
+      - "9"
       - "8"
-      - "7.9"
 
   release:
     type: string
