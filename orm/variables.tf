@@ -3,7 +3,7 @@
 
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.0.2"
+  default     = "1.1"
 }
 
 variable "tenancy_ocid" {}
@@ -12,11 +12,11 @@ variable "compartment_ocid" {}
 #variable "fingerprint" {}
 #variable "user_ocid" {}
 #variable "private_key_path" {}
-variable "availablity_domain_name" {
+variable "availability_domain_name" {
   default = ""
 }
 
-variable "availablity_domain_number" {
+variable "availability_domain_number" {
   default = 0
 }
 
@@ -99,6 +99,5 @@ variable "instance_os" {
 
 variable "linux_os_version" {
   description = "Operating system version for all Linux instances"
-  default     = "8"
-  #  default     = "7.9"
+  default     = "9"
 }
