@@ -36,7 +36,7 @@ locals {
 
 resource "oci_core_instance" "webserver" {
   count               = var.numberOfNodes
-  availability_domain = var.availablity_domain_name == "" ? data.oci_identity_availability_domains.ADs.availability_domains[var.availablity_domain_number]["name"] : var.availablity_domain_name
+  availability_domain = var.availability_domain_name == "" ? data.oci_identity_availability_domains.ADs.availability_domains[var.availability_domain_number]["name"] : var.availability_domain_name
   compartment_id      = var.compartment_ocid
   display_name        = "webserver-${count.index}"
   fault_domain        = "FAULT-DOMAIN-${(count.index % 3) + 1}"

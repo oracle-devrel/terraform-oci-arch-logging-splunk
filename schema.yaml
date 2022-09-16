@@ -14,7 +14,7 @@ variableGroups:
   - tenancy_ocid
   - region
   - release
-  - availablity_domain_number
+  - availability_domain_number
   - use_existing_vcn
   - vcn_id
   - lb_subnet_id
@@ -24,7 +24,7 @@ variableGroups:
   visible: true  
   variables:
   - compartment_ocid
-  - availablity_domain_name
+  - availability_domain_name
   - numberOfNodes
   - show_advanced
 
@@ -89,7 +89,7 @@ variables:
     title: Region
     description: "Region where you want to deploy the resources defined by this stack."
 
-  availablity_domain_name:
+  availability_domain_name:
     type: oci:identity:availabilitydomain:name
     required: true
     visible: true
